@@ -119,18 +119,6 @@
             </div>
             <div class="card-againBtn noselect" @click="doitAgain"></div>
         </div>
-
-        <!--  图片预览弹窗  -->
-        <el-dialog
-            class="imgView-dialog"
-            title=""
-            :visible="imgView.state"
-            :fullscreen="true"
-            :modal-append-to-body="false"
-            :before-close="closeDialog"
-            center>
-            <img :src="imgView.src" alt="">
-        </el-dialog>
     </div>
 </template>
 
@@ -152,8 +140,7 @@
                 'screenshot',
                 'theme',
                 'currThemeElement',
-                'flipCards',
-                'imgView'
+                'flipCards'
             ])
         },
         mounted() {

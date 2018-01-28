@@ -5,15 +5,12 @@ import axios from 'axios';
 import uuid from 'uuid/v1';
 import "babel-polyfill";
 import store from 'store/index'
-import {Tabs, TabPane, Button, Input, Row, Col,Dialog} from 'element-ui'
+import {Button, Input, Row, Col} from 'element-ui'
 
-Vue.use(Tabs);
-Vue.use(TabPane);
 Vue.use(Button);
 Vue.use(Input);
 Vue.use(Row);
 Vue.use(Col);
-Vue.use(Dialog);
 
 const vm = new Vue({
     store,
