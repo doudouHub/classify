@@ -5,12 +5,13 @@ import axios from 'axios';
 import uuid from 'uuid/v1';
 import "babel-polyfill";
 import store from 'store/index'
-import {Button, Input, Row, Col} from 'element-ui'
+import {Button, Input, Row, Col,Tag} from 'element-ui'
 
 Vue.use(Button);
 Vue.use(Input);
 Vue.use(Row);
 Vue.use(Col);
+Vue.use(Tag);
 
 const vm = new Vue({
     store,

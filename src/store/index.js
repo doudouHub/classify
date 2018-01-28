@@ -11,7 +11,7 @@ const state = {
         list: [
             {
                 id: 1,
-                name: '热气球'
+                name: '海底世界'
             },
             {
                 id: 2,
@@ -30,38 +30,26 @@ const state = {
     },
     // 当前主题元素
     currThemeElement: {
+        src:'./static/img/theme/theme',
         backgroundThumb: './static/img/theme/theme1/bg-thumb.jpg',
         background: './static/img/theme/theme1/bg.jpg',
         element: './static/img/theme/theme1/element.png'
     },
     flipCards: {
-        title: '',
+        title: '请做出正确的分类',
         list: [
             {
                 id: 1,
-                posi: {
-                    img: '',
-                    txt: '',
-                    class: 'in'
-                },
-                oppo: {
-                    img: '',
-                    txt: '',
-                    class: 'out'
-                }
+                title: '类别一',
+                tags: [
+                    '1',
+                    '2',
+                ]
             },
             {
                 id: 2,
-                posi: {
-                    img: '',
-                    txt: '',
-                    class: 'in'
-                },
-                oppo: {
-                    img: '',
-                    txt: '',
-                    class: 'out'
-                }
+                title: '类别二',
+                tags: []
             }
         ]
     },
